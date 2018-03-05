@@ -130,7 +130,7 @@ class STMPE1600DigiOut {
        STMPE1600DigiOut_I2CWrite(data, expdevaddr, GPSR_0_7, 2);
     }
 		
- private:
+protected:
     TwoWire *dev_i2c; 
     uint8_t expdevaddr;
     ExpGpioPinName exppinname;
